@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <meta title="starling-spine-hx" package="spine.starling" version="0.1.0" />
+    <app main="sample.Main" file="sample" path="bin" />
+
+    <window background="#FFFFFF" allow-high-dpi="true" fps="0" />
+    <window orientation="landscape" vsync="false" antialiasing="0" depth="false" stencil="false" />
+    <window width="0" height="0" fullscreen="true" resizable="true" />
+
+    <haxelib name="openfl" />
+    <haxelib name="starling" />
+    <haxelib name="spine-hx" />
+
+    <assets path="assets/goblin" rename="goblin" embed="true" />
+
+    <source path="src" />
+</project>
