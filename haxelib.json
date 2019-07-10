@@ -1,14 +1,15 @@
 {
     "name": "starling-spine-hx",
     "url": "https://github.com/dmn-chumak/starling-spine-hx",
-    "license": "MIT",
+    "license": "BSD",
     "tags": [ "starling", "spine", "openfl", "animation", "cross" ],
     "description": "Spine runtime integration with Starling engine converted from official ActionScript 3.0 implementation",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "classPath": "src",
-    "releasenote": "Inital library version",
+    "releasenote": "Improved repository structure & license type",
     "contributors": [ "dmn-chumak" ],
     "dependencies": {
-        "spine-hx": ""
+        "starling": "2.5.1",
+        "spine-hx": "3.6.0"
     }
 }
