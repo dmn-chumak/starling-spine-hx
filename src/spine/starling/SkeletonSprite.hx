@@ -254,15 +254,16 @@ class SkeletonSprite extends DisplayObject {
             if (verticesLength != 0)
                 empty = false;
 
-            var iii = 0;
+            var ii = 0;
 
-            for (ii in 0...verticesLength) {
-                var x:Float = worldVertices[iii], y:Float = worldVertices[iii + 1];
-                minX = minX < x ? minX : x;
-                minY = minY < y ? minY : y;
-                maxX = maxX > x ? maxX : x;
-                maxY = maxY > y ? maxY : y;
-                iii += 2;
+            while (ii < verticesLength)
+            {
+                var x:Float = worldVertices[ii], y:Float = worldVertices[ii + 1];
+                minX = Math.min(minX, x);
+                minY = Math.min(minY, y);
+                maxX = Math.max(maxX, x);
+                maxY = Math.max(maxY, y);
+                ii += 2;
             }
         }
 
